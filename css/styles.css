@@ -21,3 +21,22 @@ main {
 .joke{
   margin-bottom: 15px;
 }
+
+.container img{
+  padding: 0;
+  width: 360px;
+  margin: auto;
+  text-align: center;
+}
+
+nav{
+  background-color: #991600 !important; /* reddish */
+}
+
+footer{
+  background-color: #991600 !important; /* blue */
+}
+
+.footer-copyright{
+  background-color: #ffb547 !important;
+}
