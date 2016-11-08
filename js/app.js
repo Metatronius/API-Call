@@ -11,8 +11,10 @@ $('#searchButton').on('click', function(event) {
 
 
       $.get( "https://api.chucknorris.io/jokes/search?query=" + query, function( data ) {
+        var jokeResults = [];
         for (var i = 0; i < data.result.length; i++){
-          console.log(data.result[i].value);
+          jokeResults.push(data.result[i].value);
+          $("#listings").append("<div class='joke'>" + '<strong>Joke #' + (i+1) +': </strong>' + '<div>' + jokeResults[i] + '</div>' + '</div>');
         }
       });
 
