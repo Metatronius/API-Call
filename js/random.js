@@ -6,6 +6,7 @@ $('#randomButton').on('click', function(event)
         function(data)
         {
             console.log(data.value);
+            $("#listings").empty();
             $("#listings").append("<div class='joke'><strong>" +
                 data.value + '</srong></div>')
         });
